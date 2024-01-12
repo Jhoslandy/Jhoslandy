@@ -1,15 +1,7 @@
-- 👋 Hi, I’m @Jhoslandy
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
 
-<!---
-Jhoslandy/Jhoslandy is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
-Hi, I’m @Jhoslandy
-- 👀 I’m interested in prograamming
-- 🌱 I’m currently learning programacion
-- 💞️ I’m looking to collaborate on jobs future
-- 📫 How to reach me @Jhoslandy
+
+Hello, I’m José Andrés Aruquipa. I’m 20 years.
+- 💻 I’m interested in technology and programming logic
+- 🎓 I’m currently learning frontend development and studying systems engineering at UMSA.
+- 🗺️ I’m looking to collaborate in recognized companies dedicated to technology
+- 📫 How to contact me @Jhoslandy
