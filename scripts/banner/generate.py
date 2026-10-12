@@ -32,28 +32,33 @@ LOGO_HOLD_SECONDS = 4.0
 TRAVELLER_COUNT = 900
 HOLD_PARTICLE_COUNT = 2_400
 SEED = 314159
+# Portrait crop, as fractions of the source image. The source is already a
+# tight head + shoulders cutout, so keep its full width.
+CROP_WIDTH = 1.0
+CROP_TOP = 0.0
 LOGO_SUFFIXES = {".png", ".webp"}
-LOGO_ALIASES = {"kube": "kubernetes"}
-PREFERRED_LOGO_ORDER = ("linux", "kubernetes")
+LOGO_ALIASES: dict[str, str] = {}
+PREFERRED_LOGO_ORDER = ("java", "spring", "python")
+BANNER_VERSION = "v12"  # bump to bust GitHub image caching
 
 YAML_ROWS = [
     (0, "profile", ""),
-    (1, "subject", "Maria Claudia"),
-    (1, "role", "DevOps Engineer"),
-    (1, "origin", "Rosario, Argentina"),
-    (1, "focus", "CI/CD · Cloud Native · IaC"),
-    (1, "status", "Automatizacion · Escalado · Despliegue"),
-    (1, "toolchain", "Terraform · Helm · GitHub Actions"),
+    (1, "subject", "Jose Andres Aruquipa Coca"),
+    (1, "role", "Desarrollador de Software"),
+    (1, "origin", "La Paz, Bolivia"),
+    (1, "focus", "Backend · Mobile · Data"),
+    (1, "research", "Hologramas · Realidad Aumentada (UMSA)"),
+    (1, "community", "Code_Cats (fundador)"),
     (0, "stack", ""),
-    (1, "cloud", "AWS · Azure"),
-    (1, "containers", "Kubernetes · Docker · Helm"),
-    (1, "iac", "Terraform · Ansible"),
-    (1, "observability", "Prometheus · Datadog · Sentry"),
-    (1, "automation", "Python · Bash · JavaScript"),
+    (1, "backend", "Java · Spring Boot · JPA · JWT · FastAPI"),
+    (1, "mobile", "Kotlin · Jetpack Compose"),
+    (1, "frontend", "React · Vite · Tailwind CSS"),
+    (1, "data", "PostgreSQL · SQL · Power BI · DAX"),
+    (1, "languages", "Java · Kotlin · Python · SQL"),
     (0, "contact", ""),
-    (1, "linkedin", "/in/mcperezes"),
-    (1, "github", "macu-dev"),
-    (1, "timezone", "UTC-3 · Rosario"),
+    (1, "linkedin", "/in/joseandweb"),
+    (1, "github", "Jhoslandy"),
+    (1, "timezone", "UTC-4 · La Paz"),
 ]
 
 THEMES = {
@@ -64,9 +69,9 @@ THEMES = {
         "line":    "#25344C",
         "muted":   "#8291A8",
         "text":    "#F0E6F0",
-        "portrait":"#F78CA0",   # city pop pink
+        "portrait":"#00FF41",   # hacker green
         "chrome":  "#C9B1D9",   # city pop lavender
-        "accent":  "#F78CA0",
+        "accent":  "#00FF41",
         "shadow":  "#02050B",
     },
     "light": {
@@ -76,9 +81,9 @@ THEMES = {
         "line":    "#F0C0CE",
         "muted":   "#9B7B8A",
         "text":    "#2D1A24",
-        "portrait":"#E05F80",
+        "portrait":"#0B8A3E",
         "chrome":  "#7B5EA7",
-        "accent":  "#E05F80",
+        "accent":  "#0B8A3E",
         "shadow":  "#D4A0B0",
     },
 }
@@ -110,7 +115,7 @@ def normalize_logo(image: Image.Image) -> Image.Image:
     alpha = icon.getchannel("A")
     if alpha.getextrema() == (255, 255):
         # Remove only light pixels connected to the canvas edge. This keeps light
-        # details enclosed by a dark outline (for example, Linux's belly) opaque.
+        # details enclosed by a dark outline (for example, a logo's inner details) opaque.
         gray = np.asarray(ImageOps.grayscale(icon))
         background = edge_connected(gray >= 220)
         visible = ~background
@@ -183,12 +188,12 @@ def floyd_steinberg(gray: np.ndarray) -> np.ndarray:
 def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     """Return sampled x/y banner coordinates from a 300x340 dither grid."""
     source = Image.open(SOURCE).convert("RGBA")
-    # Tighter head + shoulders crop so face detail fills the VISUAL.MAP frame.
+    # Head + shoulders crop so face detail fills the VISUAL.MAP frame.
     w, h = source.size
-    crop_w = int(w * 0.60)
+    crop_w = int(w * CROP_WIDTH)
     crop_h = int(crop_w * (340 / 300))
     left = (w - crop_w) // 2
-    top = int(h * 0.08)
+    top = int(h * CROP_TOP)
     crop = source.crop((left, top, left + crop_w, top + crop_h)).resize((300, 340), Image.Resampling.LANCZOS)
     rgb = crop.convert("RGB")
     alpha = np.asarray(crop.getchannel("A"), dtype=np.float32) / 255.0
@@ -338,9 +343,9 @@ def render_svg(
         '<svg xmlns="http://www.w3.org/2000/svg" '
         f'width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         'aria-labelledby="title desc">',
-        "<title id=\"title\">Maria Claudia's live system profile</title>",
+        "<title id=\"title\">Jose Andres Aruquipa (Jhos) — live system profile</title>",
         '<desc id="desc">Animated terminal profile with a dithered portrait and '
-        "DevOps tool silhouettes.</desc>",
+        "software stack silhouettes.</desc>",
         "<defs>",
         '<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">'
         f'<feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="{t["shadow"]}" '
@@ -473,7 +478,7 @@ def render_svg(
             f'stroke="{t["chrome"]}"/>',
             f'<text x="1062" y="111" text-anchor="middle" fill="{t["chrome"]}" '
             'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" '
-            'font-weight="700">@macu-dev</text>',
+            'font-weight="700">@Jhoslandy</text>',
         ]
     )
 
@@ -545,7 +550,7 @@ def main() -> None:
             for name, image in logos.items()
         }
         svg = render_svg(theme, portraits[theme], sampled, hold_particles, rng)
-        output = ASSETS / f"banner-{theme}.v9.svg"
+        output = ASSETS / f"banner-{theme}.{BANNER_VERSION}.svg"
         output.write_text(svg, encoding="utf-8")
         byte_size = output.stat().st_size
         print(

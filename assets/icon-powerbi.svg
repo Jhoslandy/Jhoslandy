@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Power BI</title>
+  <rect width="48" height="48" rx="10" fill="#1d1d23"/>
+  <rect x="11" y="26" width="7" height="12" rx="2" fill="#76d8d2"/>
+  <rect x="20.5" y="18" width="7" height="20" rx="2" fill="#c7a4f5"/>
+  <rect x="30" y="10" width="7" height="28" rx="2" fill="#f3a0b5"/>
+  <path d="M9 40h30" stroke="#f3d29b" stroke-width="2" stroke-linecap="round"/>
+</svg>

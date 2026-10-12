@@ -1,21 +1,21 @@
 <div align="center">
 
 <!-- LOCAL CITY-POP BANNER -->
-<a href="https://github.com/macu-dev">
+<a href="https://github.com/Jhoslandy">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.v9.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.v9.svg">
-    <img src="assets/banner-light.v9.svg" width="960" alt="Perfil DevOps de María Claudia">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.v12.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.v12.svg">
+    <img src="assets/banner-light.v12.svg" width="960" alt="Perfil de Jose Andres Aruquipa, desarrollador de software">
   </picture>
 </a>
 
 <br>
 
-<a href="https://github.com/macu-dev">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;duration=2600&amp;pause=900&amp;color=F78CA0&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Maria+Claudia+%E2%80%94+DevOps+Engineer%3BInfrastructure+as+Code+%7C+CI%2FCD+%7C+Cloud+Native%3BContainers+%E2%80%A2+Kubernetes+%E2%80%A2+Observability%3BCafe+-+Retro+-+Music+-+Vibe+-+Chill+-+Tecnologia" alt="Banner animado con perfil DevOps">
+<a href="https://github.com/Jhoslandy">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;duration=2600&amp;pause=900&amp;color=00FF41&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Jose+Andres+Aruquipa+%E2%80%94+Desarrollador+de+Software%3BJava+%2B+Spring+Boot+%7C+Kotlin+%2B+Jetpack+Compose%3BReact+%E2%80%A2+FastAPI+%E2%80%A2+PostgreSQL+%E2%80%A2+Power+BI%3BHologramas+%2B+Realidad+Aumentada+%40+UMSA%3BCode_Cats+%E2%80%94+comunidad+dev" alt="Banner animado con el perfil de Jose Andres Aruquipa">
 </a>
 
-<img src="https://komarev.com/ghpvc/?username=macu-dev&style=flat&color=f78ca0&label=profile+views" alt="profile views">
+<img src="https://komarev.com/ghpvc/?username=Jhoslandy&style=flat&color=f78ca0&label=profile+views" alt="profile views">
 
 </div>
 
@@ -24,7 +24,12 @@
 ## `$ whoami`
 
 <p align="center">
-  <img src="assets/whoami-citypop.svg" width="960" alt="Terminal city-pop con el perfil de María Claudia, DevOps Engineer">
+  <img src="assets/whoami-citypop.svg" width="960" alt="Terminal city-pop con el perfil de Jose Andres Aruquipa, desarrollador de software">
+</p>
+
+<p align="center">
+  Hago software de punta a punta: APIs con Spring Boot, apps Android con Kotlin y tableros en Power BI.<br>
+  Investigo hologramas y realidad aumentada en la UMSA y fundé Code_Cats para aprender en comunidad.
 </p>
 
 <br>
@@ -36,51 +41,49 @@
 <table border="1" cellpadding="14" bgcolor="#17171c">
   <thead>
     <tr>
-      <th colspan="2" align="left"><code>macu-dev:~$ cat tech-stack.yaml</code></th>
+      <th colspan="2" align="left"><code>Jhoslandy:~$ cat tech-stack.yaml</code></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td width="50%" valign="top"><code>├─ ☁ cloud_infrastructure:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=aws,azure,ansible" alt="AWS, Azure y Ansible"><br>
-        <sub><code>AWS · Azure · Ansible</code></sub>
+      <td width="50%" valign="top"><code>├─ ⚙ backend_api:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=java,spring,fastapi" alt="Java, Spring Boot y FastAPI">
+        <img src="https://cdn.simpleicons.org/hibernate/c7a4f5?viewbox=auto" height="48" alt="JPA / Hibernate">
+        <img src="https://cdn.simpleicons.org/jsonwebtokens/f3d29b?viewbox=auto" height="48" alt="JWT">
+        <img src="https://cdn.simpleicons.org/sqlalchemy/76d8d2?viewbox=auto" height="48" alt="SQLAlchemy"><br>
+        <sub><code>Java · Spring Boot · JPA · JWT · FastAPI · SQLAlchemy</code></sub>
       </td>
-      <td width="50%" valign="top"><code>├─ ▣ databases_messaging:</code><br><br>
-        <img src="assets/icon-amazon-rds.svg" height="48" alt="Amazon RDS">
-        <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,dynamodb" alt="MySQL, PostgreSQL, MongoDB y DynamoDB"><br>
-        <sub><code>Amazon RDS · MySQL · PostgreSQL · MongoDB · DynamoDB</code></sub>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top"><code>├─ ⚙ containers_ci_cd:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=kubernetes,docker,githubactions,gitlab,bitbucket,bash" alt="Kubernetes, Docker, GitHub Actions, GitLab CI, Bitbucket y Bash"><br>
-        <sub><code>Kubernetes · Docker · GitHub Actions · GitLab CI · Bitbucket · Bash</code></sub>
-      </td>
-      <td valign="top"><code>├─ ◉ monitoring_observability:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=sentry,prometheus" alt="Sentry y Prometheus">
-        <img src="https://cdn.simpleicons.org/datadog/76d8d2?viewbox=auto" height="48" alt="Datadog">
-        <img src="assets/icon-amazon-cloudwatch.svg" height="48" alt="Amazon CloudWatch"><br>
-        <sub><code>Sentry · Prometheus · Datadog · Amazon CloudWatch</code></sub>
+      <td width="50%" valign="top"><code>├─ ▣ mobile:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=kotlin,androidstudio" alt="Kotlin y Android Studio">
+        <img src="https://cdn.simpleicons.org/jetpackcompose/76d8d2?viewbox=auto" height="48" alt="Jetpack Compose"><br>
+        <sub><code>Kotlin · Jetpack Compose · Android</code></sub>
       </td>
     </tr>
     <tr>
-      <td valign="top"><code>├─ ✦ languages_frameworks:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=nodejs,javascript,react,nextjs,typescript,python,fastapi" alt="Node.js, JavaScript, React, Next.js, TypeScript, Python y FastAPI"><br>
-        <sub><code>Node.js · JavaScript · React · Next.js · TypeScript · Python · FastAPI</code></sub>
+      <td valign="top"><code>├─ ✦ frontend:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=react,vite,tailwind" alt="React, Vite y Tailwind CSS"><br>
+        <sub><code>React · Vite · Tailwind CSS</code></sub>
       </td>
-      <td valign="top"><code>╰─ ⌁ security_iac:</code><br><br>
-        <img src="https://cdn.simpleicons.org/trivy/f3d29b?viewbox=auto" height="48" alt="Trivy">
-        <img src="assets/icon-sonarqube.svg" height="48" alt="SonarQube">
-        <img src="https://skillicons.dev/icons?i=terraform" alt="Terraform">
-        <img src="https://cdn.simpleicons.org/cilium/c7a4f5?viewbox=auto" height="48" alt="Cilium">
-        <img src="https://cdn.simpleicons.org/falco/76d8d2?viewbox=auto" height="48" alt="Falco"><br>
-        <sub><code>Trivy · SonarQube · Terraform · Cilium · Falco</code></sub>
+      <td valign="top"><code>├─ ◉ data_bi:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL">
+        <img src="assets/icon-powerbi.svg" height="48" alt="Power BI"><br>
+        <sub><code>PostgreSQL · SQL · Power BI · DAX</code></sub>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><code>├─ ⌁ languages:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=java,kotlin,python" alt="Java, Kotlin y Python"><br>
+        <sub><code>Java · Kotlin · Python · SQL · DAX</code></sub>
+      </td>
+      <td valign="top"><code>╰─ ☄ research_community:</code><br><br>
+        <sub><code>Hologramas · Realidad Aumentada — Auxiliar de investigación, UMSA</code></sub><br><br>
+        <sub><code>Code_Cats — fundador de la comunidad</code></sub>
       </td>
     </tr>
   </tbody>
   <tfoot>
     <tr>
-      <td colspan="2"><code>status: ready&nbsp;&nbsp;·&nbsp;&nbsp;environment: production</code></td>
+      <td colspan="2"><code>status: building&nbsp;&nbsp;·&nbsp;&nbsp;environment: production</code></td>
     </tr>
   </tfoot>
 </table>
@@ -89,22 +92,22 @@
 
 ---
 
-## `$ kubectl get signals --all-namespaces`
+## `$ ./gradlew skills --radar`
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/radar-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
-    <img src="assets/radar-light.svg" width="390" alt="Radar de habilidades DevOps">
+    <img src="assets/radar-light.svg" width="390" alt="Radar de habilidades de desarrollo">
   </picture>&nbsp;
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/radar-langs-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
-    <img src="assets/radar-langs-light.svg" width="370" alt="Radar de lenguajes y scripting">
+    <img src="assets/radar-langs-light.svg" width="370" alt="Radar de lenguajes">
   </picture>
 </p>
 
-<p align="center"><sub><code>signals: devops_skill_radar · language_stack_radar · status: healthy</code></sub></p>
+<p align="center"><sub><code>signals: dev_skill_radar · language_stack_radar · status: healthy</code></sub></p>
 
 ---
 
@@ -113,17 +116,17 @@
 
 <div align="center">
 
-<a href="https://www.instagram.com/diario_devops">
+<a href="https://www.instagram.com/jho.s.s/">
   <img src="https://img.shields.io/badge/Instagram-f78ca0?style=for-the-badge&logo=instagram&logoColor=1a1a2e" alt="Instagram">
 </a>&nbsp;&nbsp;
-<a href="https://medium.com/@maraclaudiaprezescalante">
-  <img src="https://img.shields.io/badge/Medium-c7a4f5?style=for-the-badge&logo=medium&logoColor=1a1a2e" alt="Medium">
+<a href="https://linktr.ee/jhosland">
+  <img src="https://img.shields.io/badge/Linktree-c7a4f5?style=for-the-badge&logo=linktree&logoColor=1a1a2e" alt="Linktree">
 </a>&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/mcperezes/">
+<a href="https://www.linkedin.com/in/joseandweb/">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>&nbsp;&nbsp;
-<a href="https://github.com/macu-dev">
-  <img src="https://img.shields.io/badge/GitHub-f78ca?style=for-the-badge&logo=github&logoColor=1a1a221" alt="GitHub">
+<a href="https://github.com/Jhoslandy">
+  <img src="https://img.shields.io/badge/GitHub-f78ca0?style=for-the-badge&logo=github&logoColor=1a1a2e" alt="GitHub">
 </a>
 
 </div>
@@ -132,5 +135,5 @@
 <br>
 
 <div align="center">
-<sub>Hecho con 💖 y mucho cafe desde Rosario, Argentina · @macu-dev</sub>
+<sub>Hecho con 💖 y mucho café desde La Paz, Bolivia · @Jhoslandy</sub>
 </div>

@@ -1,3 +1,6 @@
 .DS_Store
 __pycache__/
 *.py[cod]
+
+# Diseños fuente locales (ya integrados en assets/)
+mis-disenos/
